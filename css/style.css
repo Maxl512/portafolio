@@ -334,8 +334,8 @@ body{
     }
     .footer__languages img{
         display: inline-block;
-        width: 10%;
-        height: 10%;
+        width: 15%;
+        height: 15vh;
     
         margin: 3% 3%;
     }
@@ -610,6 +610,8 @@ body{
         flex-direction: row;
         flex-wrap: wrap;
         box-sizing: border-box;
+
+        
     
         width: 100vw;
         height: 100%;
@@ -630,9 +632,8 @@ body{
     }
     .footer__languages img{
         display: inline-block;
-        width: 10%;
-        height: 10%;
-    
+        width: 15%;
+        height: 15vh;
         margin: 3% 3%;
     }
 }
@@ -928,8 +929,8 @@ body{
     }
     .footer__languages img{
         display: inline-block;
-        width: 10%;
-        height: 10%;
+        width: 20%;
+        height: 15vh;
     
         margin: 3% 3%;
     }
