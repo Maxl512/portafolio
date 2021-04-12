@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portafolio Maximo Gomez</title>
+</head>
+<body>
+          
+    <nav class="navbar-mobile">
+        <a class="optionM" href="#about-me">Sobre mi</a>
+        <a class="optionM" href="#projects">Proyectos</a>
+        <a class="optionM" href="#contact-me">Contactame</a>
+        <a class="optionM--active" href="curriculum.pdf">Descargar CV</a>
+        <button onclick="closeMenu();" class="optionM--close">Cerrar</button>
+    </nav>
+    <nav class="navbar-fixed">
+        <h1 class="navbar-fixed__h1">Portafolio Maximo Gomez</h1>
+        <div class="navigation-options">
+            <a class="option" href="#about-me">Sobre mi</a>
+            <a class="option" href="#projects">Proyectos</a>
+            <a class="option" href="#contact-me">Contactame</a>
+            <a class="option--active" href="curriculum.pdf">Descargar CV</a>
+        </div>
+        <button onclick="displayMenu();" class="display-menu">Menu</button>
+    </nav> 
+    <section class="about-me" id="about-me">
+        <div class="about-me__image">
+            <img class="profile-image" src="img/ogre.jpg" alt="imagen">
+        </div>
+        <div class="about-me__info">
+            <h2 class="about-me__h2">Maximo Gomez</h2>
+            <h3 class="about-me__h3">Desarrollador Web Front-end</h3>
+            <p class="about-me__p">¡Hola! Mi nombre es Maximo. Soy un Desarrollador Web que vive en Nueva Esparta. Tengo varios meses aprendiendo a desarrollar páginas webs de manera autodidacta debido a que me apasiona. Actualmente se manejar HTML, CSS y Javascript. En unos meses empezare a estudiar Ingeneria de Software en una universidad estadounidense. Se hablar ingles avanzado y estoy aprendiendo a hablar Portugues.</p>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <div class="project">
+            <div class="project-info">
+                <h2 class="project-info__h2">Ogre's Attack</h2>
+                <p class="project-info__description">En este juego deberas evitar que los Ogros destruyan el arma y capturen tu base, necesitas tres disparos para matar un ogro. Tienes 3 vidas, cada vez q un Ogro llegue a tu arma perderas una vida. Si te quedas sin vidas pierdes, y podras guardar tu puntaje con un nombre que elegiras.</p>          
+                <div class="project-links">
+                    <a class="project__link" href="#codigo">Ver Codigo</a>
+                    <a class="project__link" href="#proyecto">Ver proyecto</a>
+                </div>     
+            </div>
+            <div class="project-image">
+                <img src="img/ogre.jpg">
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-info">
+                <h2 class="project-info__h2">MaxiShop</h2>
+                <p class="project-info__description">Un proyecto de sitio web E-commerce que quedo a menos de mitad de camino porque el arturo no me puso mas tareas.</p>          
+                <div class="project-links">
+                    <a class="project__link" href="#codigo">Ver Codigo</a>
+                    <a class="project__link" href="#proyecto">Ver proyecto</a>
+                </div>     
+            </div>
+            <div class="project-image">
+                <img src="img/ogre.jpg">
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-info">
+                <h2 class="project-info__h2">Portafolio Landing Page</h2>
+                <p class="project-info__description">Es esta pagina re facherita que esta viendo, a que quedo cool.</p>          
+                <div class="project-links">
+                    <a class="project__link" href="#codigo">Ver Codigo</a>
+                    <a class="project__link" href="#proyecto">Ver proyecto</a>
+                </div>     
+            </div>
+            <div class="project-image">
+                <img src="img/ogre.jpg">
+            </div>
+        </div>
+    </section>
+    <section class="contact-me" id="contact-me">
+        <form class="contact-form" action="#">
+            <h2 class="contact-form__h2">Contactame!</h2>
+            <label class="contact-form__label" for="name">Nombre:</label>
+            <input class="contact-form__input" id="name" type="text">
+            <label class="contact-form__label" for="email">Email:</label>
+            <input class="contact-form__input" id="email" type="email">
+            <label class="contact-form__label" for="message">Mensaje:</label>
+            <textarea class="contact-form__input" id="message" rows="6"></textarea>
+            <input class="contact-form__submit" type="submit" value="Enviar">
+        </form>
+        <div class="contact-image">
+            <img src="img/ogre.jpg">
+        </div>
+    </section>
+    <footer class="footer-container">
+        <h2 class="footer__madeBy">Hecho por Maximo Gomez con:</h2>
+        <div class="footer__languages">
+            <img src="img/ogre.jpg">
+            <img src="img/ogre.jpg">
+            <img src="img/ogre.jpg">
+            <img src="img/ogre.jpg">
+            <img src="img/ogre.jpg">
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
