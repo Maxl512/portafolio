@@ -8,7 +8,6 @@
     <title>Portafolio Maximo Gomez</title>
 </head>
 <body>
-          
     <nav class="navbar-mobile">
         <a class="optionM" href="#about-me">Sobre mi</a>
         <a class="optionM" href="#projects">Proyectos</a>
@@ -24,7 +23,9 @@
             <a class="option" href="#contact-me">Contactame</a>
             <a class="option--active" href="curriculum.pdf">Descargar CV</a>
         </div>
-        <button onclick="displayMenu();" class="display-menu">Menu</button>
+        <div class="display-menu">
+            <button onclick="displayMenu();">Menu</button>
+        </div>
     </nav> 
     <section class="about-me" id="about-me">
         <div class="about-me__image">
@@ -81,11 +82,11 @@
         <form class="contact-form" action="#">
             <h2 class="contact-form__h2">Contactame!</h2>
             <label class="contact-form__label" for="name">Nombre:</label>
-            <input class="contact-form__input" id="name" type="text">
+            <input required minlength="6" maxlength="12" class="contact-form__input" id="name" type="text">
             <label class="contact-form__label" for="email">Email:</label>
-            <input class="contact-form__input" id="email" type="email">
+            <input required class="contact-form__input" id="email" type="email">
             <label class="contact-form__label" for="message">Mensaje:</label>
-            <textarea class="contact-form__input" id="message" rows="6"></textarea>
+            <textarea required class="contact-form__input" id="message" rows="6"></textarea>
             <input class="contact-form__submit" type="submit" value="Enviar">
         </form>
         <div class="contact-image">
