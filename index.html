@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Portafolio Maximo Gomez</title>
 </head>
 <body>
@@ -79,17 +79,23 @@
         </div>
     </section>
     <section class="contact-me" id="contact-me">
-        <form class="contact-form" action="#">
+        <form id="contact-form" class="contact-form" action="#">
             <h2 class="contact-form__h2">Contactame!</h2>
-            <label class="contact-form__label" for="name">Nombre:</label>
-            <input required minlength="6" maxlength="12" class="contact-form__input" id="name" type="text">
-            <label class="contact-form__label" for="email">Email:</label>
-            <input required class="contact-form__input" id="email" type="email">
-            <label class="contact-form__label" for="message">Mensaje:</label>
-            <textarea required class="contact-form__input" id="message" rows="6"></textarea>
+            <div id="input-container">
+                <label class="contact-form__label" for="name">Nombre:</label>
+                <input required minlength="6" maxlength="12" class="contact-form__input" id="name" type="text">
+            </div>
+            <div id="input-container">
+                <label class="contact-form__label" for="email">Email:</label>
+                <input required class="contact-form__input" id="email" type="email">
+            </div>
+            <div id="input-container">
+                <label class="contact-form__label" for="message">Mensaje:</label>
+                <textarea required class="contact-form__input" id="message" rows="6"></textarea>
+            </div>
             <input class="contact-form__submit" type="submit" value="Enviar">
         </form>
-        <div class="contact-image">
+        <div id="contact-image" class="contact-image">
             <img src="img/ogre.jpg">
         </div>
     </section>
