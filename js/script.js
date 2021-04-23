@@ -41,23 +41,6 @@ window.onscroll = function() {
     let y = window.scrollY;
 
     if (screenWidth >= 750) {
-        if (y >= 300) {
-            projects.children[0].style.left = "0%";
-        } else{
-            projects.children[0].style.left = "-120%";
-        };
-    
-        if (y >= 500) {
-            projects.children[1].style.left = "0%";
-        } else{
-            projects.children[1].style.left = "-120%";
-        };
-    
-        if (y >= 650) {  
-            projects.children[2].style.left = "0%";
-        } else{
-            projects.children[2].style.left = "-120%";
-        };
     
         if (y >= 900) {
             contactForm.style.opacity = "1";
@@ -68,24 +51,6 @@ window.onscroll = function() {
         };
 
     } else if (screenWidth >= 320 && screenWidth < 750){
-        if (y >= 80) {
-            projects.children[0].style.left = "0%";
-        } else{
-            projects.children[0].style.left = "-120%";
-        };
-    
-        if (y >= 170) {
-            projects.children[1].style.left = "0%";
-        } else{
-            projects.children[1].style.left = "-120%";
-        };
-    
-        if (y >= 240) {  
-            projects.children[2].style.left = "0%";
-        } else{
-            projects.children[2].style.left = "-120%";
-        };
-    
         if (y >= 400) {
             contactForm.style.opacity = "1";
             contactImg.style.opacity = "1";
